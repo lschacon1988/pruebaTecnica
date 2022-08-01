@@ -4,16 +4,15 @@ import { Box } from "@mui/material";
 import { grey } from "@mui/material/colors";
 
 const ResultText = () => {
+    
   const invertedWord = useSelector((state) => state.reverce);
-
+  const errorTex = useSelector((state) => state.err);
   const color = grey[50];
   const colorFondo = grey[100];
-  let errorTex = useSelector((state) => state.err);
 
   return (
     <div
       style={{
-        // justifyItems: "center",
         backgroundZize: "cover",
         width: "100%",
         height: "100vh",

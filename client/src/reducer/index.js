@@ -8,13 +8,12 @@ const rootReducer = (state = initialState, { type, payload }) => {
     case "TEXT": {
       let newState = state.reverce;
       
-      return {        
+      return {          
         reverce: [...newState, payload],
       };
     }
     case "ERROR": {
-      console.log("ESTO ES REDUCER ERROR", payload);
-      return {
+            return {
         ...state,
         err: payload,
       };

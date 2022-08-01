@@ -62,8 +62,7 @@ const Nav = () => {
   const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
-    e.preventDefault();
-    console.log(e.target.value);
+    e.preventDefault();    
     setText(e.target.value.toLowerCase());
   };
   const onReverce = (e) => {
