@@ -9,7 +9,8 @@ describe("grupo test de la ruta", () => {
       .get("/reverce?text=hola")
       .set("Accept", "application/json")
       .expect("Content-Type", /json/)
-      .expect(200, done);
+      .expect(200, done)
+      .expect({text: 'aloh'})
   });
 
   it("respond with json containing an error", (done) => {
